@@ -1,13 +1,13 @@
-#!/bin/python
+#!/usr/bin/python
 
 '''
 Created on 6 May 2013
 
 @author: Ali
 '''
+from __future__ import print_function
 import mcquery
 import datetime
-from __future__ import print_function
 import MySQLdb as mdb
 
 host = 'mc.pwegoable.com'
