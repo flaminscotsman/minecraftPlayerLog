@@ -50,4 +50,5 @@ if __name__ == '__main__':
         cursor = con.cursor()
         cursor.execute(mainTableQuery % (mainTable, time.strftime('%Y-%m-%d %H:%M:%S'), query['numplayers']))
         cursor.execute(mappingQuery % (relationshipTable, cursor.lastrowid, userTable,  ", ".join(["'" + playername + "'" for playername in query['players']])))
-        cursor.commit()
+        con.commit()
+        cursor.close()
