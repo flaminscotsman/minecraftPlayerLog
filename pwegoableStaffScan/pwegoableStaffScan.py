@@ -22,7 +22,7 @@ mainTable = 'pwegoableLogs'
 userTable = 'pwegoableUsers'
 relationshipTable = 'pwegoableMapping'
 
-mainTableQuery = "INSERT INTO `%s` (`id`, `time`, `count`) VALUES (NULL, `%s`, %s)"
+mainTableQuery = "INSERT INTO `%s` (`id`, `time`, `count`) VALUES (NULL, '%s', %s)"
 mappingQuery = "INSERT INTO `%s` (`timeID`, `userID`) SELECT %s, memberID FROM %s where `username` IN (%s)"
 DEBUG = False
 
